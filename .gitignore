@@ -1,0 +1,31 @@
+# Ignore everything in the root except the "wp-content" directory.
+/*
+!.gitignore
+!.gitmodules
+!README.md
+!package.json
+!bower.json
+!Gruntfile.js
+!wp-content/
+!db/
+!config-sample.json
+
+# Ignore everything in the "wp-content" directory, except the "plugins"
+# and "themes" directories.
+wp-content/*
+!wp-content/plugins/
+!wp-content/themes/
+
+# Ignore everything in the "themes" directory, except the themes you specify
+wp-content/themes/*
+!wp-content/themes/mcgill-bros
+
+.DS_Store
+*/**/node_modules/
+*/**/bower_components/
+*/**/.sass-cache/
+*.sublime-workspace
+*/**/scss-lint-report.xml
+*/**/aws-credentials.json
+*.css.map
+*/**/_dev/
