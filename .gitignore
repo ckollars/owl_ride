@@ -18,7 +18,8 @@ wp-content/*
 
 # Ignore everything in the "themes" directory, except the themes you specify
 wp-content/themes/*
-!wp-content/themes/mcgill-bros
+!wp-content/themes/owl-ride-2015
+!wp-content/themes/owlride
 
 .DS_Store
 */**/node_modules/

@@ -1,0 +1,10 @@
+/*
+Theme Name: Owl Ride 2015
+*/
+#choke{width:360px;padding:20px}
+#chokecom{list-style-type:none}
+#respond,#comments{width:100%}
+#respond fieldset{border-width:0}
+#respond textarea{border:1px solid #000}
+#respond input{width:160px}
+#respond input#submit{width:140px}

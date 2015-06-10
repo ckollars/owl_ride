@@ -1,0 +1,74 @@
+body{margin:0;color:#fff;font:18px/30px Georgia,"Times New Roman",Times,serif;background:#073050}
+img{border:0}
+a{color:#fff;text-decoration:none}
+a:hover{color:#fcb040}
+#wrapper{width:998px;overflow:hidden;margin:0 auto;background:url(images/bg-wrapper.jpg) no-repeat}
+.home-p{background:url(images/bg-wrapper-home.jpg) no-repeat !important}
+#header{width:100%;overflow:hidden;padding:25px 0 0}
+.main-nav{width:100%;overflow:hidden;position:relative;padding:6px 0 0}
+.w1{float:left;left:50%;position:relative}
+.w2{float:left;left:-50%;position:relative}
+.main-nav ul{float:left;margin:0;padding:0;list-style:none}
+.main-nav ul li{float:left;padding:0 13px}
+.main-nav ul li a{display:block;overflow:hidden;text-indent:-9999px;height:18px}
+.main-nav ul li.event-info a{width:122px;background:url(images/menu-event.gif) no-repeat}
+.main-nav ul li.registration a{width:121px;background:url(images/menu-registration.gif) no-repeat}
+.main-nav ul li.volunteers a{width:119px;background:url(images/menu-volunteers.gif) no-repeat}
+.main-nav ul li.contestsprizes a{width:184px;background:url(images/menu-contests.gif) no-repeat}
+.main-nav ul li.teams a{width:64px;background:url(images/menu-teams.gif) no-repeat}
+.main-nav ul li.safety a{width:65px;background:url(images/menu-safety.gif) no-repeat}
+.main-nav ul li.sponsors a{width:84px;background:url(images/menu-sponsors.gif) no-repeat}
+.main-nav ul li.contacts a{width:105px;background:url(images/menu-contacts.gif) no-repeat}
+.main-nav ul li.mfd a{width:40px;background:url(images/menu-mfd.gif) no-repeat}
+.main-nav ul li a:hover,.main-nav ul li.active a{background-position:0 -18px}
+#main{width:100%;overflow:hidden;padding:0 0 42px;position:relative}
+.logo{width:784px;overflow:hidden;margin:0 auto;display:block;padding:41px 2px 0 0}
+.logo a{display:block;width:784px;height:296px;overflow:hidden;text-indent:-9999px;background:url(images/logo.png) no-repeat}
+.register-hold{width:574px;overflow:hidden;margin:0 auto;padding:158px 0 0;background:url(images/btn-register-t.png) no-repeat}
+.btn-register{display:block;height:95px;position:relative;overflow:hidden}
+.btn-register a{display:block;width:574px;height:192px;overflow:hidden;text-indent:-9999px;background:url(images/btn-register.png) no-repeat}
+.btn-register a:hover{margin:-96px 0 0}
+.text-ind{display:block;overflow:hidden;text-indent:-9999px;margin:0}
+.text-date{margin:8px 0 0;width:792px;height:95px;background:url(images/text-date.gif) no-repeat}
+.text-omahas{margin:4px 0 0 24px;width:750px;height:55px;background:url(images/text-omahas.gif) no-repeat}
+.text-rider{width:100%;overflow:hidden;text-align:center;margin:-2px 0 0}
+.text-rider p{margin:0;font:12px/20px Arial,Helvetica,sans-serif;color:#fff}
+.year-five {position:absolute;top:620px;left:820px;width:128px;height:125px;background:url(images/year-five.gif) no-repeat}
+#footer{width:100%;overflow:hidden;padding:0 0 30px}
+.sponsors-hold{width:100%;overflow:hidden;padding:0 0 30px}
+.sponsors-hold .heading{width:100%;overflow:hidden;padding:0 0 18px;background:url(images/separator1.gif) no-repeat 50% 100%}
+.text-thanks{margin:0 auto;width:266px;height:18px;background:url(images/text-thanks.gif) no-repeat}
+.sponsors-box{width:100%;overflow:hidden;position:relative;padding:19px 0 41px}
+.sponsors-box ul{margin:0 auto;padding:0;list-style:none;text-align:center;width:90%;}
+.sponsors-box ul li{display:inline-block;padding:0;height:120px;vertical-align:middle}
+.sponsors-box ul li a {height:120px;line-height:120px}
+.sponsors-box ul li img {padding:24px;vertical-align:middle}
+.f-nav{width:100%;overflow:hidden;position:relative}
+.f-nav ul{float:left;margin:0;padding:0;list-style:none}
+.f-nav ul li{float:left;font:12px/20px Arial,Helvetica,sans-serif;padding:0 15px 0 15px;background:url(images/separator2.gif) no-repeat 0 6px}
+.f-nav ul li:first-child{background:none}
+.f-nav ul li a{color:#fff;float:left;padding:0 0 0 2px;overflow:hidden;height:21px}
+.f-nav ul li a:hover{position:relative;text-decoration:none;color:#fcb040}
+.f-nav ul li a img{float:left;display:inline;margin:0 9px 0 -2px}
+.f-nav ul li a:hover img{margin:-21px 9px 0 -2px}
+.copy{width:100%;overflow:hidden;position:relative;padding:4px 0 0}
+.copy ul{float:left;overflow:hidden;margin:0;padding:0 3px 0 0;list-style:none}
+.copy ul li{float:left;padding:0 7px 0 9px;font:10px/12px Arial,Helvetica,sans-serif;color:#fff;background:url(images/separator3.gif) no-repeat 0 2px}
+.copy ul li:first-child{background:none}
+.copy ul li a{color:#fff}
+.copy ul li a:hover{text-decoration:none;color:#fcb040}
+.twocolumns{width:100%;overflow:hidden;padding:48px 0 20px}
+.aside{float:left;width:240px}
+.logo-i{width:210px;overflow:hidden;margin:0 auto;padding:0 0 0 2px;display:block}
+.logo-i a{display:block;width:210px;height:291px;overflow:hidden;text-indent:-9999px;background:url(images/logo-i.png) no-repeat}
+.text-omahas-i{margin:0 0 0 20px;width:193px;height:51px;background:url(images/text-omaha-i.gif) no-repeat}
+.text-date-i{width:191px;height:97px;margin:-8px 0 0 20px;background:url(images/text-date-i.gif) no-repeat}
+.btn-register-n{display:block;margin:19px 0 0;width:238px;height:48px;overflow:hidden;text-indent:-9999px;background:url(images/btn-register-n.gif) no-repeat}
+.btn-register-n:hover{background-position:0 -48px}
+.content{float:right;width:710px;padding:7px 19px 0 0}
+.content .heading{width:100%;overflow:hidden;padding:0 0 9px;margin:0 0 21px;background:url(images/bg-heading.gif) no-repeat 0 100%}
+.content .heading h1{margin:0}
+.content .heading h1 img{display:block}
+.content p{margin:0 0 30px}
+.content h2{margin:-5px 0 3px;font-size:30px;line-height:32px;font-weight:normal;text-transform:uppercase;color:#fcb040}
+.content h3{margin:0;font-size:18px;line-height:30px;font-weight:normal;text-transform:uppercase;color:#fcb040}
