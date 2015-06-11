@@ -1,5 +1,5 @@
 {
-  "name": "owl-ride",
+  "name": "owlride",
   "author": {
     "name": "Christopher Kollars",
     "url": "http://christopherkollars.com"
@@ -11,6 +11,7 @@
     "load-grunt-tasks": "~0.4.0",
     "glob": "~3.2.9",
     "matchdep": "~0.3.0",
+    "grunt-grunticon": "~2.1.6",
     "grunt-contrib-sass": "~0.9.2",
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-concat": "~0.3.0",
@@ -23,6 +24,9 @@
     "grunt-contrib-cssmin": "~0.12.2",
     "grunt-notify": "~0.4.1",
     "grunt-imageoptim": "~1.4.1",
+    "grunt-aws-s3": "~0.12.1",
+    "grunt-contrib-compress": "~0.13.0",
+    "grunt-svgmin": "~2.0.1"
   },
   "themeFolder": "wp-content/themes/owl-ride-2015",
   "themeName": "Owl Ride 2015"

@@ -8,8 +8,6 @@ function theme_setup() {
   add_theme_support( 'post-thumbnails' );
 
   register_nav_menu('main_menu', __( 'Main Menu' ));
-
-  add_multipost_thumbnails();
 }
 
 // Remove some of the default Wordpress Dashboard Widgets
