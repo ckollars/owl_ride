@@ -1,0 +1,21 @@
+header {
+  background-color: $brand_blue;
+
+  > container {
+    @include clearfix;
+  }
+}
+.logo {
+  display: block;
+  max-width: 300px;
+  padding: 10px 30px;
+  background-color: $brand_blue;
+  border-radius: 46%;
+  border: none;
+}
+
+.container__logo {
+  position: absolute;
+  left: 0;
+  top: 10px;
+}

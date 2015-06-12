@@ -1,5 +1,6 @@
-    <div class="sponsors"></div>
-			<h4>Our Sponsors</h4>
+    <div class="sponsors">
+      <div class="container">
+  			<h4>Our Sponsors</h4>
 				<ul class="sponsors-list">
 					<li style="display: block;"><span style="margin: 0; font-size: 18px; line-height: 30px; font-weight: normal; text-transform: uppercase; color: #fcb040;">Presenting Sponsor</span>&nbsp;<a href="http://www.metrofcu.org/"><img src="<?php bloginfo('template_directory'); ?>/images/sponsor-metro.png" alt="Metro Credit Union"/></a></li>
 					<li><a href="http://wowt.com/"><img src="<?php bloginfo('template_directory'); ?>/images/bottom-6.png" alt="UNMC"/></a></li>
@@ -14,19 +15,22 @@
 					<li><a href="http://www.wholefoodsmarket.com/"><img alt="Whole Foods" src="http://owlride.org/wp-content/uploads/2012/05/sponsor-whole-foods.png" width="89"></a></li>
 					<li><a href="http://www.sodexousa.com/"><img src="<?php bloginfo('template_directory'); ?>/images/bottom-sodexo.png" alt="Sodexo"/></a></li>
 				</ul>
+      </div>
 		</div>
     <footer>
-			<div class="contact">
-        <p class="email">
-          <a href="mailto:info@owlride.org">info@owlride.org</a>
-          <span class="social">
-            <a href="" class="btn--facebook icon--facebook">Follow us on Facebook</a>
-            <a href="" class="btn--twiter icon--twitter">Follow us on Twitter</a>
-            <a href="" class="btn--instagram icon--instagram">Follow us on Instagram</a>
-          </span>
-        </p>
+      <div class="container">
+  			<div class="contact">
+          <p class="email">
+            <a href="mailto:info@owlride.org">info@owlride.org</a>
+            <span class="social">
+              <a href="" class="btn btn--social icon--facebook">Follow us on Facebook</a>
+              <a href="" class="btn btn--social icon--twitter">Follow us on Twitter</a>
+              <a href="" class="btn btn--social icon--instagram">Follow us on Instagram</a>
+            </span>
+          </p>
+        </div>
+  			<p class="copyright">Copyright <?php echo(date('Y'));?> OWL RIDE</p>
       </div>
-			<p class="copyright">Copyright <?php echo(date('Y'));?> OWL RIDE</p>
     </footer>
 	</div>
 </div>

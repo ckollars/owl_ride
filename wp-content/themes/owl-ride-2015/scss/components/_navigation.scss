@@ -1,0 +1,40 @@
+.container__nav {
+  float: right;
+  padding: 30px 0;
+}
+
+.main-nav {
+  display: none;
+
+  @include respond-to(medium) {
+    display: block;
+  }
+}
+
+.menu {
+  @include horizontal-list;
+  margin: 20px 10px;
+  padding: 0;
+
+  a {
+    display: block;
+    font-size: em(14px);
+    font-weight: 600;
+    text-decoration: none;
+    color: $brand_tan;
+    text-transform: uppercase;
+    border-color: transparent;
+
+    &:hover {
+      border-color: $brand_tan;
+    }
+  }
+
+  li {
+    margin-right: 18px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

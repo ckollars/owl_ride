@@ -1,0 +1,8 @@
+.container {
+  @include container;
+  position: relative;
+
+  .main-content & {
+    padding: 0 130px 0 230px;
+  }
+}

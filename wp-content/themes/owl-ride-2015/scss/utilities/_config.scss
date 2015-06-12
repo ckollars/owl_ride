@@ -1,0 +1,22 @@
+/**
+ * BREAKPOINTS
+ * @type Map
+ */
+$breakpoints: (
+  'mobile'  : ( max-width:  767px ),
+  'small'   : ( min-width:  768px ),
+  'medium'  : ( min-width: 992px ),
+  'large'   : ( min-width: 1200px )
+);
+
+/**
+ * SUSY
+ * @type Map
+ */
+$susy: (
+  columns: 12,
+  gutters: 0.25,
+  container: 1200px,
+  math: fluid,
+  output: float
+);

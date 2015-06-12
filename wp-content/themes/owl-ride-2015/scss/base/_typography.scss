@@ -1,0 +1,98 @@
+/**
+ * Font: Proxima Nova
+ * Thin:   100
+ * Normal: 400
+  *
+ */
+
+
+html {
+  font-family: $base-font-family;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+body {
+  color: $brand_tan;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+  -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+  font-size: rem(18px);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  line-height: 1;
+}
+
+h1 {
+  font-family: $serif-family;
+  line-height: 1.2;
+  font-size: em(48px);
+  text-transform: uppercase;
+  margin: 40px 20px;
+}
+
+.page-title {
+  font-family: $base-font-family;
+  line-height: 1;
+  font-size: em(48px);
+  font-weight: 100;
+  text-align: center;
+
+  @include respond-to(medium) {
+    margin: 140px 0;
+  }
+}
+
+h3 {
+  font-size: em(46px);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.3;
+
+  @include respond-to(medium) {
+    font-size: em(76px);
+    line-height: 1.5;
+  }
+
+  span {
+    display: block;
+    font-family: $serif-family;
+    font-size: rem(19px);
+    text-transform: uppercase;
+    font-style: normal;
+    line-height: 1;
+
+    @include respond-to(medium) {
+      font-size: rem(27px);
+    }
+  }
+}
+
+.hr {
+  // background: transparent url(../img/bg--hr.svg) no-repeat center center;
+  background-color: $brand_tan;
+  height: 1px;
+  margin-bottom: 60px;
+}
+
+p {
+  margin: 0 0 rem(30px) 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid;
+  transition: border 0.15s;
+
+  &:hover {
+    border-color: transparent;
+  }
+}

@@ -1,0 +1,16 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn--social {
+  @include text-invisible;
+  width: 34px;
+  height: 34px;
+  border: none;
+  background-position: center center;
+  margin-right: 8px;
+
+  &:last-child { margin-right: 0; }
+}
+
