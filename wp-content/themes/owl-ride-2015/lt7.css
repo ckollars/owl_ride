@@ -1,6 +1,0 @@
-* html .logo a{background:url(http://owlride.org/wp-content/themes/owlride/images/none.gif);cursor:pointer;filter: progid:dximagetransform.microsoft.alphaimageloader(src='http://owlride.org/wp-content/themes/owlride/images/logo.png', sizingmethod='crop')}
-* html .register-hold{background:none;filter:progid:dximagetransform.microsoft.alphaimageloader(src='http://owlride.org/wp-content/themes/owlride/images/btn-register-t.png', sizingmethod='crop')}
-* html .btn-register a{background:url(http://owlride.org/wp-content/themes/owlride/images/none.gif);cursor:pointer;filter: progid:dximagetransform.microsoft.alphaimageloader(src='http://owlride.org/wp-content/themes/owlride/images/btn-register.png', sizingmethod='crop')}
-* html .logo-i a{background:url(http://owlride.org/wp-content/themes/owlride/images/none.gif);cursor:pointer;filter: progid:dximagetransform.microsoft.alphaimageloader(src='http://owlride.org/wp-content/themes/owlride/images/logo-i.png', sizingmethod='crop')}
-.f-nav ul li{background-image:expression((this===this.parentNode.childNodes[0]) ? "none" : "auto")}
-.copy ul li{background-image:expression((this===this.parentNode.childNodes[0]) ? "none" : "auto")}

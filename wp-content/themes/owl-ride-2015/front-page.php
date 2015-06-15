@@ -5,7 +5,7 @@
     <div class="container">
       <h1 class="page-title">Omaha&rsquo;s nighttime,<br>urban, cycling<br>adventure.</h1>
       <div class="hr"></div>
-      <h3 class="sub-title">July 11th 2015 at 10:00pm<span>Starting and ending at the Lewis and Clark Landing</span></h3>
+      <h3 class="sub-title">July 11<sup>th</sup> 2015 at 10:00pm<span>Starting and ending at the Lewis and Clark Landing</span></h3>
       <a href="https://www.eventbrite.com/e/owl-ride-tickets-16979885294" class="btn btn--register">Register</a>
     </div>
   </div>
