@@ -1,9 +1,13 @@
 .container {
   @include container;
   position: relative;
+  padding: 0 30px;
 
   .main-content & {
-    padding: 0 130px 0 230px;
+
+    @include respond-to(medium) {
+      padding: 0 130px 0 230px;
+    }
   }
 }
 
@@ -17,7 +21,11 @@
 }
 
 .container-small {
-  padding: 0 300px;
+  padding: 0 30px;
+
+  @include respond-to(medium) {
+    padding: 0 300px;
+  }
 
   p {
     line-height: 2;

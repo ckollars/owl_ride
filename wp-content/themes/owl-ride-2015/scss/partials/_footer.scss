@@ -10,6 +10,12 @@ footer {
 
 .social {
   margin-left: 30px;
+
+  @include respond-to(mobile) {
+    display: block;
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
 }
 
 .sponsors-list {
@@ -18,12 +24,8 @@ footer {
   padding-bottom: 40px;
 
   li {
-    width: 180px;
-    margin: 30px 20px;
-
-    &:nth-child(5n+1) {
-      margin-right: 0;
-    }
+    width: 38%;
+    margin: 20px 0;
 
     &:first-child {
       width: 100%;
@@ -34,6 +36,31 @@ footer {
         max-width: 410px;
       }
     }
+
+    @media (max-width: 480px) {
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    @include respond-to(small) {
+      width: 180px;
+      margin: 30px 20px;
+
+      &.sponsor-thirds {
+        width: 23%;
+        text-align: center;
+      }
+
+      &.sponsor-reset {
+        margin-right: 0;
+      }
+
+
+      &:nth-child(5n+1):not(.sponsor-thirds) {
+        margin-right: 0;
+      }
+    }
+
   }
   a {
     display: block;

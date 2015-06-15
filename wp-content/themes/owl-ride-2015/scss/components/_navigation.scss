@@ -10,6 +10,7 @@
 .menu {
   position: fixed;
   padding: 100px 40px;
+  margin: 0;
   top: 0;
   right: 0;
   bottom: 0;
@@ -18,6 +19,10 @@
   height: 100%;
   transform: translateX(100%);
   transition: transform 0.2s;
+
+  @include respond-to(mobile) {
+    overflow-y: auto;
+  }
 
   @include respond-to(medium) {
     @include horizontal-list;
