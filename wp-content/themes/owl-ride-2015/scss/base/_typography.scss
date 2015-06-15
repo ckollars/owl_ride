@@ -31,55 +31,121 @@ h4 {
 }
 
 h1 {
+  padding-bottom: 40px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid $brand_tan;
   font-family: $serif-family;
-  line-height: 1.2;
-  font-size: em(48px);
+  font-style: italic;
+  font-size: em(24px);
+  font-weight: normal;
+
+  @include respond-to(medium) {
+    font-size: em(38px);
+  }
+}
+
+
+h2,
+h3 {
+  margin: 0 0 24px 0;
+  padding-top: 18px;
+  font-family: $base-font-family;
+  font-size: em(21px);
+  font-weight: 100;
   text-transform: uppercase;
-  margin: 40px 20px;
+
+  @include respond-to(medium) {
+    font-size: em(26px);
+  }
+
+}
+
+h3 {
+  margin: 0 0 24px 0;
+  padding-top: 18px;
+  font-family: $base-font-family;
+  font-size: em(21px);
+  font-weight: 100;
+  text-transform: uppercase;
+
+  @include respond-to(medium) {
+    font-size: em(26px);
+  }
 }
 
 .page-title {
+  padding: 0;
+  border: none;
   font-family: $base-font-family;
   line-height: 1;
   font-size: em(48px);
   font-weight: 100;
   text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
 
   @include respond-to(medium) {
     margin: 140px 0;
   }
+
+  .callout & {
+    line-height: 1.5;
+    letter-spacing: em(2px);
+    margin: 0 0 30px 0;
+  }
 }
 
-h3 {
-  font-size: em(46px);
+.sub-title {
+  font-family: $serif-family;
+  font-size: em(36px);
   font-style: italic;
   font-weight: 400;
   line-height: 1.3;
 
   @include respond-to(medium) {
-    font-size: em(76px);
+    font-size: em(38px);
     line-height: 1.5;
   }
 
   span {
     display: block;
-    font-family: $serif-family;
-    font-size: rem(19px);
-    text-transform: uppercase;
+    font-family: $base-font-family;
+    font-size: rem(18px);
     font-style: normal;
+    font-weight: 400;
     line-height: 1;
-
-    @include respond-to(medium) {
-      font-size: rem(27px);
-    }
+    padding-top: 24px;
   }
 }
 
+.sponsors-title {
+  font-size: em(30px);
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+  border-bottom: 1px solid $brand_tan;
+  margin: 0 40px 30px 40px;
+  padding: 40px 0;
+}
+
 .hr {
-  // background: transparent url(../img/bg--hr.svg) no-repeat center center;
-  background-color: $brand_tan;
-  height: 1px;
+  background: transparent url(../img/bg--hr.svg) no-repeat center center;
+  height: 26px;
   margin-bottom: 60px;
+  background-size: 30% auto;
+}
+
+
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: $brand_tan;
+
+  &.small {
+    width: 40%;
+    margin: 0 auto 60px auto;
+  }
 }
 
 p {
@@ -92,7 +158,12 @@ a {
   border-bottom: 1px solid;
   transition: border 0.15s;
 
+  &:not(> img) {
+    border: none;
+  }
+
   &:hover {
     border-color: transparent;
   }
 }
+

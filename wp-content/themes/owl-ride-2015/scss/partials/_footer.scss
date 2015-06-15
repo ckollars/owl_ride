@@ -11,3 +11,34 @@ footer {
 .social {
   margin-left: 30px;
 }
+
+.sponsors-list {
+  @include horizontal-list;
+  margin: 0;
+  padding-bottom: 40px;
+
+  li {
+    width: 180px;
+    margin: 30px 20px;
+
+    &:nth-child(5n+1) {
+      margin-right: 0;
+    }
+
+    &:first-child {
+      width: 100%;
+      max-width: none;
+      margin-left: 0;
+
+      a {
+        max-width: 410px;
+      }
+    }
+  }
+  a {
+    display: block;
+    border: none;
+    margin: 0 auto;
+  }
+
+}
