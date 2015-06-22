@@ -23,6 +23,7 @@
           <li><a href="http://www.nebraskamed.com/"><img src="<?php bloginfo('template_directory'); ?>/images/sponsors/nebraska-medical.png" alt="Nebraska Medical" width="65" height="51"></a></li>
           <li><a href="http://recyclebikeshop.net/"><img src="<?php bloginfo('template_directory'); ?>/images/sponsors/recycle-bikeshop.png" alt="Re-Cycle Bike Shop" width="70" height="42"></a></li>
           <li><a href="http://sodexousa.com"><img src="<?php bloginfo('template_directory'); ?>/images/sponsors/sodexo.png" alt="Sodexo" width="111" height="37"></a></li>
+          <li class="sponsor-thirds"><a href="http://www.greenstreetcycles.com/"><img src="<?php bloginfo('template_directory'); ?>/images/sponsors/greenstreet-cycles.png" alt="Greenstreet Cycles" width="120" height="120"></a></li>
           <li class="sponsor-thirds"><a href="http://trekbicyclestores.com/"><img src="<?php bloginfo('template_directory'); ?>/images/sponsors/trek-bicycle.png" alt="Trek Bicycle Store" width="114" height="80"></a></li>
           <li class="sponsor-thirds"><a href="http://www.interstatebatteries.com/"><img src="<?php bloginfo('template_directory'); ?>/images/sponsors/interstate-battery.png" alt="Interstate Battery" width="107" height="71"></a></li>
           <li class="sponsor-thirds sponsor-reset"><a href="http://bike-rack.com/"><img src="<?php bloginfo('template_directory'); ?>/images/sponsors/bike-rack.png" alt="Bike Rack" width="118" height="58"></a></li>
