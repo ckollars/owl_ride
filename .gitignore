@@ -1,32 +1,54 @@
-# Ignore everything in the root except the "wp-content" directory.
+# Forked from http://bigwilliam.com/gitignore-for-wordpress-projects/
+# Ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+*[Tt]humbs.db
+*.Trashes
+.sass-cache
+
+# Ignore everything in the root except the "wp-content" directory
 /*
 !.gitignore
-!.gitmodules
-!README.md
-!package.json
-!bower.json
-!Gruntfile.js
 !wp-content/
-!db/
-!config-sample.json
 
-# Ignore everything in the "wp-content" directory, except the "plugins"
-# and "themes" directories.
+# Ignore everything in the "wp-content" directory, except the "plugins" and
+# "themes" directories.
 wp-content/*
 !wp-content/plugins/
+!wp-content/mu-plugins/
 !wp-content/themes/
 
-# Ignore everything in the "themes" directory, except the themes you specify
-wp-content/themes/*
-!wp-content/themes/owl-ride-2015
-!wp-content/themes/owlride
+# ... but DO ignore WordPress core themes and plugins
+wp-content/themes/twentythirteen/
+wp-content/themes/twentyfourteen/
+wp-content/themes/twentyfifteen/
+wp-content/plugins/akismet/
+wp-content/plugins/hello.php
 
-.DS_Store
-*/**/node_modules/
-*/**/bower_components/
-*/**/.sass-cache/
-*.sublime-workspace
-*/**/scss-lint-report.xml
-*/**/aws-credentials.json
-*.css.map
-*/**/_dev/
+# ignore huge applications folder
+wp-content/plugins/application/appps/
+
+# ignore more things
+wp-content/themes/**/.cache/
+wp-content/themes/**/style.css.map
+
+# ignore node modules
+wp-content/themes/**/node_modules/
+
+#ignore npm debug log
+wp-content/themes/**/npm-debug.log
+
+#ignore css and javascript sourcemaps
+wp-content/themes/**/maps/
+
+# Don't ignore the production config file or markdown files.
+!config/production.yml
+!*.md
+
+# Don't ignore the files in db, except for the backups folder.
+!db
+db/backups
