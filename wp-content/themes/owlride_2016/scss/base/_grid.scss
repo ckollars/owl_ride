@@ -1,0 +1,35 @@
+.container {
+  @include container;
+  position: relative;
+  padding: 0 30px;
+
+  .main-content & {
+
+    @include respond-to(medium) {
+      padding: 0 130px 0 230px;
+    }
+  }
+}
+
+.home .main-content {
+  padding: 30px 0;
+  text-align: center;
+
+  .container {
+    padding: 0;
+  }
+}
+
+.container-small {
+  padding: 0 30px;
+
+  @include respond-to(medium) {
+    padding: 0 300px;
+  }
+
+  p {
+    line-height: 2;
+    font-size: rem(15px);
+  }
+
+}

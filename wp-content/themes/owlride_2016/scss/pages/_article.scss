@@ -1,0 +1,15 @@
+.article__header {
+  max-height: 310px;
+  margin-bottom: 104px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+
+  @include respond-to(mobile) {
+    margin-bottom: 30px;
+
+    > .container {
+      padding: 60px 0;
+    }
+  }
+}

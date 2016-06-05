@@ -49,6 +49,3 @@ wp-content/themes/**/maps/
 !config/production.yml
 !*.md
 
-# Don't ignore the files in db, except for the backups folder.
-!db
-db/backups

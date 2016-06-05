@@ -1,0 +1,67 @@
+.container__nav {
+  float: right;
+  padding: 30px 30px 30px 0;
+
+  @include respond-to(large) {
+    padding-right: 0;
+  }
+}
+
+.menu {
+  position: fixed;
+  padding: 100px 40px;
+  margin: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $brand_blue;
+  z-index: 100;
+  height: 100%;
+  transform: translateX(100%);
+  transition: transform 0.2s;
+
+  @include respond-to(mobile) {
+    overflow-y: auto;
+  }
+
+  @include respond-to(medium) {
+    @include horizontal-list;
+    position: relative;
+    margin: 20px 0;
+    padding: 0;
+    transform: translateX(0);
+  }
+
+  a {
+    display: block;
+    font-size: em(14px);
+    font-weight: 600;
+    text-decoration: none;
+    color: $brand_tan;
+    text-transform: uppercase;
+    border-color: transparent;
+
+    &:hover {
+      border-color: $brand_tan;
+    }
+  }
+
+  li {
+    margin-right: 18px;
+    margin-bottom: 18px;
+
+    @include respond-to(medium) {
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .menu--show & {
+    transform: translateX(0);
+  }
+}
+
+// transform: translateX(-100%);
