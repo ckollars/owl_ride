@@ -1,53 +1,55 @@
 === Meta Tag Manager ===
-Contributors: netweblogic
-Tags: Google, SEO, Yahoo, Webmaster Tools, Meta, Meta Tags
+Contributors: netweblogic, freemius
+Tags: google, SEO, yahoo, tags, webmaster tools, meta, meta tags, ogp, open graph, twitter cards
+Text Domain: meta-tag-manager
 Requires at least: 2.5
-Tested up to: 3.0.4
-Stable tag: 1.2
+Tested up to: 4.5.2
+Stable tag: 2.0
 
-This plugin will allow you to easily add and manage special meta tags to your whole site, such as Yahoo and Google verification tags.
+Easily add and manage custom meta tags to various parts of your site or on individual posts, such as Yahoo and Google verification tags.
 
 == Description ==
 
-Simple plugin which allows you to add custom meta tags that will show across all pages on your blog or on the homepage only.
+<blockquote>Meta Tag Manager 2.0 is a complete rewrite with many improvments on the first versions. Whilst there are many improvements, this first rewrite isn't a great departure from the original plugin, although it adds some fundemental improvements. 
 
-Just upload, activate, and immediately start adding meta tags.
+We have plenty of ideas of what to add to the plugin, we'd love to hear your suggestions too, please let us know on our <a href="https://wordpress.org/support/plugin/meta-tag-manager">support forums</a>.<br/><br/></blockquote>
 
-This can be used for adding Google and Yahoo site verification tags along with any other meta tags you may want to add.
+Meta Tags Manager is a simple, lightweight plugin which allows you to add custom meta tags to your site. Features include:
 
-If you have any problems with the plugins, please visit our [http://netweblogic.com/forums/](support forums) for further information and provide some feedback first, we may be able to help. It's considered rude to just give low ratings and nothing reason for doing so.
+* Supports meta tags including the name, property, http-equiv, charset and itemprop attributes.
+* Add meta tags to specific posts, choose what Custom Post Types to support from our settings page.
+* Add global meta tags that will display on specific CPTs, Taxonomies, your front page or your whole site.
 
-If you find this plugin useful and would like to say thanks, a link, digg, or some other form of recognition to the plugin page on our blog would be appreciated.
+Use cases include:
 
-Special thanks to Martin Lormes for help during some crucial updates.
-
-= Translated Languages Available =
-
-Here's a list of currently translated languages. Translations that have been submitted are greatly appreciated and hopefully make this plugin a better one. If you'd like to contribute, please have a look at the POT file in the langs folder and send us your translations.
-
-* Danish - Christian B.
-* German - Martin Lormes
-* Spanish - Jose Manuel
-* Dutch - Marnix van der Heide
+* Adding Google and Yahoo site verification tags
+* Adding additional open graph, twitter card or other social media meta info not supported by other SEO/Meta plugins
 
 == Installation ==
 
-1. Download and unzip the plugin, then upload the entire `meta-tag-manager` directory to the `/wp-content/plugins` directory; or simply upload the zip file if you use WordPress 2.7 or newer
+1. Upload the entire `meta-tag-manager` directory to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. Go to *Settings > Meta Tag Manager*
-1. Enter the values in the text boxes. The first text box is so you can give your meta tag a memorable name and is not displayed on the website
-1. Add tags by clicking on the add tag link under the meta rows, and remove tags by clicking on the links next to the meta in question
-1. Save your changes
+1. Start adding Meta Tags!
 
 == Frequently Asked Questions ==
 
-Please see our [http://netweblogic.com/forums/](support forums).
+Please visit our <a href="https://wordpress.org/support/plugin/meta-tag-manager">support forums</a> if you have any questions.
 
 == Screenshots ==
 
 1. Once the plugin is activated you can add/edit/delete tags from the menu in *Settings > Meta Tag Manager*
 
+2. You can also choose what post types to manage specific meta tags
+
+3. If enabled you can add meta tags to a specific post in it's own meta box
+
 == Changelog ==
+
+= 2.0 =
+* complete rewrite of plugin using up-to-date WP best practices
+* improved interface for adding meta tags including support for creating tags using either the property, charset, http-equiv or itemprop attributes
+* added ability to add individual meta tags to specific individual CPTs which can be chosen in settings page
 
 = 1.2 =
 * fixed stripslashes bug
