@@ -15,7 +15,7 @@ var gulp = require('gulp'),
 //////////////////////////////////////////////////////////////////////
 
 gulp.task('css', function () {
-    return gulp.src('./style.scss')
+    return gulp.src('./_source/scss/styles.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
@@ -28,10 +28,9 @@ gulp.task('css', function () {
       remove: true,
       cascade: true
     }))
-    .pipe(gulp.dest('./'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(cssnano({processImport: false}))
-    .pipe(sourcemaps.write('./maps'))
+    .pipe(sourcemaps.write('./_source/maps'))
     .pipe(gulp.dest('./'))
     .pipe(browserSync.stream({match: '**/*.*.css'}));
 });
@@ -42,7 +41,7 @@ gulp.task('css', function () {
 //////////////////////////////////////////////////////////////////////
 
 gulp.task('lint', function() {
-  return gulp.src('./-/js/*.js')
+  return gulp.src('./_source/js/*.js')
     .pipe(eslint({
       rules: {
         'quotes': 0,
@@ -78,16 +77,16 @@ gulp.task('lint', function() {
 
 gulp.task('js', function(){
   return gulp.src([
-      '-/js/plugins/**/*.js',
-      '-/js/*.js'
+      './_source/js/plugins/**/*.js',
+      './_source/js/*.js'
     ])
     .pipe(sourcemaps.init())
     .pipe(concat('scripts.js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
     .on('error', handleError)
-    .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest('./-/js/vendor/'))
+    .pipe(sourcemaps.write('../_source/maps'))
+    .pipe(gulp.dest('./js'))
     .pipe(browserSync.reload({stream:true, once: true}));
 });
 
@@ -100,7 +99,7 @@ gulp.task('browser-sync', function() {
     // Documentaion on browser sync is at: browsersync.io
     // It's really rad.
     browserSync.init(null, {
-        proxy: "CHANGE-THIS.dev",
+        proxy: "owlride.dev",
     });
 });
 

@@ -16,6 +16,7 @@
     "url": "http://bitbucket.com/fuzzco/repo-name.git"
   },
   "devDependencies": {
+    "bourbon": "^4.2.7",
     "browser-sync": "^2.9.8",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.2",
@@ -25,7 +26,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.4",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^1.4.1"
+    "gulp-uglify": "^1.4.1",
+    "susy": "^2.2.12"
   },
   "scripts": {
     "test": "echo \\\"Error: no test specified\\\" && exit 1",

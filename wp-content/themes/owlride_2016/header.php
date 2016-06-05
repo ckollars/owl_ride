@@ -7,13 +7,7 @@
 
   <!-- Mobile-friendly viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="google-site-verification" content="fZF4eWIad5T33MNZYz9OA2HxCyncDUuHE9uBwsx4fhI" />
-
-  <!-- Style sheet link -->
-  <link href="<?php echo get_template_directory_uri(); ?>/css/main.min.css" rel="stylesheet" media="all">
-
-  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/libs/modernizr.min.js" async></script>
+  <meta name="google-site-verification" content="fZF4eWIad5T33MNZYz9OA2HxCyncDUuHE9uBwsx4fhI">
 
   <script type="text/javascript" async>
     /*! grunt-grunticon Stylesheet Loader - v2.1.6 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
