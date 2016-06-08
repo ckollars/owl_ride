@@ -99,7 +99,7 @@ gulp.task('browser-sync', function() {
     // Documentaion on browser sync is at: browsersync.io
     // It's really rad.
     browserSync.init(null, {
-        proxy: "owlride.dev",
+        proxy: "owlride.local",
     });
 });
 
@@ -113,8 +113,8 @@ gulp.task('bs-reload', function () {
 //////////////////////////////////////////////////////////////////////
 
 gulp.task('default', ['css', 'lint', 'js', 'browser-sync'], function () {
-    gulp.watch("-/scss/**/*.scss", ['css']);
-    gulp.watch(["-/js/**/*.js", "!-/js/vendor/**.*.js"], ['lint', 'js']);
+    gulp.watch("_source/scss/**/*.scss", ['css']);
+    gulp.watch(["_source/js/**/*.js", "!_source/js/vendor/**.*.js"], ['lint', 'js']);
     gulp.watch("./**/*.php", ['bs-reload']);
 });
 

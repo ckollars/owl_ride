@@ -88,4 +88,18 @@ function owlride_jquery_local_fallback($src, $handle = null) {
 }
 add_action('wp_head', 'owlride_jquery_local_fallback');
 
-// add_image_size('lorem', 2000, 1300, true);
+// Adding ACF Options tab
+if( function_exists('acf_add_options_page') ) {
+
+  // add parent
+  $parent = acf_add_options_page(array(
+    'page_title'  => 'Theme Options and Settings',
+    'menu_title'  => 'Theme Options',
+    'redirect'    => false
+  ));
+
+}
+
+
+add_image_size('hero', 1440, 709, array('center', 'center'));
+add_image_size('hero_2x', 2880, 1418, array('center', 'center'));
