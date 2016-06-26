@@ -1,6 +1,6 @@
 footer {
   text-align: center;
-  padding: 80px 0 60px 0;
+  padding: 30px 0;
 }
 
 .email {
@@ -19,53 +19,70 @@ footer {
 }
 
 .sponsors-list {
-  @include horizontal-list;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 0;
-  padding-bottom: 40px;
+  padding: 0 0 60px 0;
+  list-style: none;
 
-  li {
-    width: 38%;
-    margin: 20px 0;
-
-    &:first-child {
-      width: 100%;
-      max-width: none;
-      margin-left: 0;
-
-      a {
-        max-width: 410px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      width: 100%;
-      margin: 20px 0;
-    }
-
-    @include respond-to(small) {
-      width: 180px;
-      margin: 30px 20px;
-
-      &.sponsor-thirds {
-        width: 23%;
-        text-align: center;
-      }
-
-      &.sponsor-reset {
-        margin-right: 0;
-      }
-
-
-      &:nth-child(5n+1):not(.sponsor-thirds) {
-        margin-right: 0;
-      }
-    }
-
-  }
   a {
     display: block;
     border: none;
     margin: 0 auto;
   }
+}
 
+.sponsor--level-1 {
+  li {
+    width: 33%;
+    margin: 0;
+    @media (max-width: 700px) {
+      width: 100%;
+    }
+  }
+}
+
+.sponsor--level-2,
+.sponsor--level-3,
+.sponsor--level-4,
+.sponsor--level-5,
+.sponsor--level-6,
+.sponsor--level-7 {
+  li {
+    width: 25%;
+    padding: 20px;
+
+    @media (max-width: 700px) {
+      width: 50%;
+    }
+  }
+}
+
+.sponsor--level-5 {
+  margin-bottom: 60px;
+}
+
+.copyright {
+  color: $yellow;
+}
+
+.icon--twitter,
+.icon--facebook,
+.icon--instagram {
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icon--twitter {
+  background-image: url(images/twitter.svg);
+}
+.icon--facebook {
+  background-image: url(images/facebook.svg);
+}
+.icon--instagram {
+  background-image: url(images/instagram.svg);
 }

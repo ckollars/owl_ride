@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  color: $brand_tan;
+  color: white;
   -webkit-text-size-adjust: none;
      -moz-text-size-adjust: none;
       -ms-text-size-adjust: none;
@@ -28,12 +28,13 @@ h3,
 h4 {
   margin: 0;
   line-height: 1;
+  color: $green;
 }
 
 h1 {
   padding-bottom: 40px;
   margin-bottom: 30px;
-  border-bottom: 2px solid $brand_tan;
+  border-bottom: 2px solid $green;
   font-family: $serif-family;
   font-style: italic;
   font-size: em(24px);
@@ -125,16 +126,33 @@ h3 {
 }
 
 .sponsors-title {
+  position: relative;
   padding: 20px 0;
   font-size: em(24px);
   text-transform: uppercase;
   font-weight: 100;
   text-align: center;
-  border-bottom: 1px solid $brand_tan;
+  color: white;
 
+  &:before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    z-index: 0;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: white;
+  }
+  span {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    background-color: $black;
+    padding: 10px 30px;
+  }
   @include respond-to(small) {
-    margin: 0 40px 30px 40px;
-    padding: 40px 0;
+    margin: 0 0 60px 0;
     font-size: em(30px);
   }
 
@@ -152,7 +170,7 @@ h3 {
 hr {
   border: none;
   height: 1px;
-  background-color: $brand_tan;
+  background-color: white;
 
   &.small {
     width: 40%;

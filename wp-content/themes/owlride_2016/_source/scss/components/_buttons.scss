@@ -47,6 +47,7 @@
 .btn--mobile {
   position: absolute;
   right: 30px;
+  top: auto;
   z-index: 101;
   cursor: pointer;
 
@@ -56,7 +57,7 @@
 }
 
 .icon--mobile {
-  @include burger(30px, 5px, 4px, $brand_tan);
+  @include burger(32px, 3px, 7px, $green);
 
   .active & {
     @include burger-to-cross;

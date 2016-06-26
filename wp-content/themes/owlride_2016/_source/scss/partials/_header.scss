@@ -1,5 +1,5 @@
 header:not(.article__header) {
-  background-color: $brand_blue;
+  background-color: $purple;
 
   > .container {
     @include clearfix;
@@ -16,16 +16,26 @@ header:not(.article__header) {
 }
 
 .logo {
+  position: relative;
   display: block;
   max-width: 300px;
   height: auto;
-  padding: 10px 30px;
-  background-color: $brand_blue;
-  border-radius: 46%;
+  padding: 0 30px;
   border: none;
 
+  img {
+    position: relative;
+    z-index: 1;
+  }
+  @media (max-width: 880px) {
+    max-width: 260px;
+  }
   @include respond-to(mobile) {
     max-width: 200px;
+  }
+
+  path {
+    box-shadow: 10px 0 0 0 rgba(white, 0.3);
   }
 }
 
@@ -34,4 +44,28 @@ header:not(.article__header) {
   left: 0;
   top: 10px;
   z-index: 1;
+
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: -50px;
+    left: -50%;
+    border-top: 240px solid $purple;
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+
+    @media (max-width: 880px) {
+      bottom: -30px;
+      border-top: 200px solid $purple;
+      border-left: 260px solid transparent;
+      border-right: 260px solid transparent;
+    }
+
+    @include respond-to(mobile) {
+      bottom: -20px;
+      border-top: 140px solid $purple;
+      border-left: 200px solid transparent;
+      border-right: 200px solid transparent;
+    }
+  }
 }

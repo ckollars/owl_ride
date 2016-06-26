@@ -20,10 +20,7 @@ gulp.task('css', function () {
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
       browsers: [
-        'last 20 versions',
         '> 5%',
-        'ie 9',
-        'ie 10'
       ],
       remove: true,
       cascade: true
